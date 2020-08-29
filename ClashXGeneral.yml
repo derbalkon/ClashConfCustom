@@ -59,9 +59,8 @@ experimental:
 # 实验性功能 hosts, 支持通配符 (例如 *.clash.dev 甚至 *.foo.*.example.com)
 # 静态的域名 比 通配域名 具有更高的优先级 (foo.example.com 优先于 *.example.com)
 # 注意: hosts 在 fake-ip 模式下不生效
-#hosts:
-#   '*.clash.dev': 127.0.0.1
-#   'alpha.clash.dev': '::1'
+# hosts:
+#   '*.pcbeta.com': 218.93.127.136
 
 dns:
   enable: true
@@ -74,22 +73,14 @@ dns:
      - localhost.ptlogin2.qq.com
   nameserver:
      - 223.5.5.5 # 阿里DNS
-     - 180.76.76.76 # 百度DNS
      - 119.29.29.29 # 腾讯DNS
-     - 117.50.11.11 # ONE DNS 拦截版 恶意网站拦截、广告过滤
-     - 117.50.10.10 # ONE DNS 纯净版 直接返回其真实的响应结果
      - 114.114.114.114 # 114 DNS
      - https://dns.alidns.com/dns-query # 阿里 DoH DNS
-     - https://doh.360.cn/dns-query # 360 DoH DNS
   fallback:
      - 8.8.8.8 # 谷歌 DNS
      - 1.1.1.1 # Cloudflare DNS
      - tls://dns.rubyfish.cn:853
-     - tls://1.0.0.1:853
-     - tls://dns.google:853
-     - https://dns.rubyfish.cn/dns-query
      - https://cloudflare-dns.com/dns-query
-     - https://dns.google/dns-query
   fallback-filter:
      geoip: true
      ipcidr: # 在这个网段内的 IP 地址会被考虑为被污染的 IP
