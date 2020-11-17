@@ -60,9 +60,9 @@ experimental:
 # 静态的域名 比 通配域名 具有更高的优先级 (foo.example.com 优先于 *.example.com)
 # +.foo.com 等同于 .foo.com 和 foo.com
 # 注意: hosts 在 fake-ip 模式下不生效
-hosts:
-  '*.pcbeta.com': 36.27.212.81
-  'cdn.pcbeta.*.inimc.com': 36.27.212.81
+# hosts:
+#   '*.pcbeta.com': 36.27.212.81
+#   'cdn.pcbeta.*.inimc.com': 36.27.212.81
 
 dns:
   enable: true
