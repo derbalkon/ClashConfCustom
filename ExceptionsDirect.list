@@ -1,2 +1,2 @@
 # Fix Bing being polluted
-# DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,bing.com
